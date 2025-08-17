@@ -1,9 +1,9 @@
-# ReviewSumGPT: Abstractive Review Summarization using GPT-2
+# ReviewSumGPT: Abstractive Review Summarization using GPT-3
 
 ## Problem Statement & Motivation
 
 In today’s e-commerce landscape, customers often face information overload when reading product reviews. Though reviews contain valuable insights, they’re often unstructured and redundant.  
-This project solves that by fine-tuning a GPT-2 language model to generate concise summaries using the **Amazon Fine Food Reviews** dataset — improving the customer experience and enabling data-driven decisions.
+This project solves that by fine-tuning a GPT-3 language model to generate concise summaries using the **Amazon Fine Food Reviews** dataset — improving the customer experience and enabling data-driven decisions.
 
 ---
 
@@ -17,13 +17,13 @@ This project solves that by fine-tuning a GPT-2 language model to generate conci
 ### Dataset Preparation
 
 Implemented a custom PyTorch `Dataset` class within the notebook to:
-- Tokenize using GPT-2 tokenizer (Hugging Face)
+- Tokenize using GPT-3 tokenizer (Hugging Face)
 - Apply padding and attention masks
 - Create a 75/25 train/test split
 
 ### Model Fine-Tuning
 
-Fine-tuned GPT-2 using Hugging Face Transformers within the notebook:
+Fine-tuned GPT-3 using Hugging Face Transformers within the notebook:
 - **Learning Rate:** `1e-5`  
 - **Epochs:** `3`  
 - **Optimizer:** `AdamW`  
@@ -57,7 +57,7 @@ Implemented a `generate_summary()` function using:
 
 ## Impact
 
-ReviewSumGPT demonstrates how transformer-based models like GPT-2 can automate complex NLP tasks such as **abstractive summarization**.  
+ReviewSumGPT demonstrates how transformer-based models like GPT-3 can automate complex NLP tasks such as **abstractive summarization**.  
 This end-to-end pipeline can be repurposed for other domains such as:
 
 - Movie and game reviews  
@@ -68,6 +68,6 @@ This end-to-end pipeline can be repurposed for other domains such as:
 
 ## Conclusion
 
-Summarize the key findings and insights gained from training and evaluating the GPT-2 model for review summarization.
+Summarize the key findings and insights gained from training and evaluating the GPT-3 model for review summarization.
 
 ---
